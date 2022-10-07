@@ -11,14 +11,14 @@ Console.WriteLine($"For {N} the 3rd extent values of previous numbers are:");
 
 if (N > 0)
 {
-    for (int i = 1; i < N; i++)
+    for (int i = 1; i <= N; i++)
     {
         Console.Write($"{i * i * i} ");
     }
 }
 if (N < 0)
 {
-    for (int i = N + 1; i < 0; i++)
+    for (int i = N; i < 0; i++)
     {
         Console.Write($"{i * i * i} ");
     }
