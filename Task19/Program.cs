@@ -12,11 +12,20 @@ int a2 = N / 1000 % 10;
 int a4 = N / 10 % 10;
 int a5 = N % 10;
 
-if (a1 == a5 && a2 == a4)
+if (N > 9999 && N < 100000 || N < -9999 && N > -100000)
 {
-    Console.WriteLine($"YES, the number is palindrome: {a1} = {a5}, {a2} = {a4}");
+    if (a1 == a5 && a2 == a4)
+    {
+        Console.WriteLine($"YES, the number is palindrome: {a1} = {a5}, {a2} = {a4}");
+    }
+    else
+    {
+        Console.WriteLine("NO, the number is NO palindrome:");
+    }
 }
 else
 {
-    Console.WriteLine("NO, the number is NO palindrome:");
+    Console.WriteLine("ERROR!");
 }
+
+
